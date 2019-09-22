@@ -63,6 +63,7 @@ footer{
 }
 
 .word h1{
+  transition: 0.1s;
   font-size: 200px;
   border-bottom: 10px solid black;
 }
@@ -85,12 +86,9 @@ footer{
   justify-content: center;
 }
 
-@keyframes wordTransition{
-  0%{
-    opacity: 0;
-  }
-
-  100%{
-    opacity: 1;
+@media (max-width: 1200px) {
+  .word h1 {
+    transition: 0.5s;
+    font-size: 100px;
   }
 }
